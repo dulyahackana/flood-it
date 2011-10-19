@@ -190,6 +190,7 @@ var FloodIt = new Class({
                 if(win_flag == 1){
                     obj._you_win();
                     obj._win_flag = 1;
+                    return false;
                 }
                 if(obj._counter == obj._max_steps){
                     obj._game_over();
